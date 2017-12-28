@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/asma-sassi/streamtest/issues"
   },
-  "homepage": "https://github.com/asma-sassi/streamtest#readme"
+  "homepage": "https://github.com/asma-sassi/streamtest#readme",
+  "dependencies": {
+    "angular": "^1.6.8"
+  }
 }
