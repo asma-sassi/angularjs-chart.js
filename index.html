@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="streamApp">
+    <head>
+        <meta charset="utf-8">
+        <!-- To ensure proper rendering and touch zooming -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>StreamTest App</title>
+        <!-- load bootstrap and fontawesome -->
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" href="./styles/style.css"/>
+    </head>
+    <body ng-controller="mainController">
+
+    <div id="main">
+
+        <!-- angular templating -->
+        <div ng-include="'./views/header.html'"></div>
+        <div ng-include="'./views/footer.html'"></div>
+        <!-- this is where content will be injected -->
+
+    </div>
+
+    </body>
+    <!-- Scripts -->
+    <script type="text/javascript" src="./node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="./node_modules/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="./node_modules/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
+    <!-- Scripts End -->
+</html>

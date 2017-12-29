@@ -20,6 +20,9 @@
   },
   "homepage": "https://github.com/asma-sassi/streamtest#readme",
   "dependencies": {
-    "angular": "^1.6.8"
+    "angular": "^1.6.8",
+    "angular-route": "^1.6.8",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
   }
 }

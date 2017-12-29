@@ -1,0 +1,20 @@
+.footer-box{
+    padding-top: 1.5%;
+}
+.social-link li {
+    display: inline-block;
+    margin: 0 10px;
+}
+.social-link .fa {
+    font-size:18px;
+    padding-right:10px;
+}
+.social-link a:hover {
+    text-decoration: none;
+}
+.social-link .github {
+    color: black;
+}
+.social-link .linkedin {
+    color: #007bb6;
+}
