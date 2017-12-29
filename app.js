@@ -26,14 +26,3 @@ streamApp.config(['$routeProvider','$locationProvider',function ($routeProvider,
     // change the default hash-prefix from '!' to empty string '' cause I'm using angularjs 1.6
     $locationProvider.hashPrefix('');
 }]);
-// create the controller and inject Angular's $scope
-streamApp.controller("MainController", function ($scope) {
-    // create a message to display in our view
-    $scope.home = "Welcome Home!";
-});
-streamApp.controller("AboutController", function ($scope) {
-    $scope.about="Wanna hear about us! Here you are :)";
-});
-streamApp.controller("ContactController", function ($scope) {
-    $scope.contact="Don't be shy to contact us!";
-});
