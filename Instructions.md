@@ -10,8 +10,9 @@ I- Installing NPM
 II- Installing packages:
     1. In order to build an AngularJS App, we need to install angular package > npm install --save angular
     2. To make our App responsive, we install bootstrap package > npm install bootstrap@3
-    3. To use global icons, we install font-awesome > npm install font-awesome@4
-    4. To be able to use app's routing, we install angular-route > npm install angular-route
+    3. Install jquery libraries for bootstrap needs > npm install jquery
+    4. To use global icons, we install font-awesome > npm install font-awesome@4
+    5. To be able to use app's routing, we install angular-route > npm install angular-route
 II- Project structure: 
     .Now, we will create two files in the root directory. app.js and index.html
     1. index.html 
@@ -24,6 +25,6 @@ III- Project development:
     1. Build index.html and call libraries in it
     2. Build header.html, then call it into index.html
     3. The same thing with footer.html
-    
+    4. Configure routes and views in app.js
  
 
