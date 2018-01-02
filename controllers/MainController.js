@@ -115,9 +115,53 @@ function ChartController ($scope, $http) {
                 title: {
                     display: true,
                     text: 'Streams distribution in % per most powerful countries'
+                },
+                ticks: {
+                    stepSize: 1,
+                    min: 0,
+                    autoSkip: false
                 }
             };
         });
+
+
+    // REQUEST OPTIONS USING GET METHOD.
+    var request3 = {
+        method: 'get',
+        url: './data/country.json',
+        dataType: 'json',
+        contentType: "application/json"
+    };
+
+    $scope.arrLabels3 = new Array;
+    $scope.arrData3 = new Array;
+
+    $http(request3)
+        .then(function onSuccess(jsonData) {
+
+            //LOOP THROUGH DATA IN THE JSON FILE.
+            angular.forEach(jsonData.data, function (item) {
+
+                //Get country property name in each object
+                $scope.arrLabels3.push(item.country);
+
+                //Get values of percentage in each object
+                $scope.arrData3.push(item.percentage);
+
+            });
+
+            $scope.labels3 = $scope.arrLabels3;
+            $scope.data3 = $scope.arrData3;
+
+            $scope.options3 = {
+                legend: { display: true },
+                title: {
+                    display: true,
+                    text: 'Streams distribution in % per most powerful countries'
+                }
+            }
+        });
+
 }
 
 
