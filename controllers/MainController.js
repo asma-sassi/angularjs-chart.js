@@ -4,7 +4,7 @@ streamApp.config(['ChartJsProvider', function (ChartJsProvider) {
     // Configure all charts
     // Import colors into chart
     ChartJsProvider.setOptions({
-        chartColors: ['#c980ff', '#FF8A80', '#80b6ff', "#008000"],
+        chartColors: ['#c980ff', '#FF8A80', '#80b6ff', "#00948E"],
         responsive: true,
         beginAtZero: true
     });
@@ -12,8 +12,6 @@ streamApp.config(['ChartJsProvider', function (ChartJsProvider) {
 streamApp.controller('MainController',['$scope', '$http', ChartController]);
 
 function ChartController ($scope, $http) {
-    // create a message to display in our view
-    $scope.home = "Welcome Home!";
 
     // REQUEST OPTIONS USING GET METHOD.
     var request1 = {
@@ -96,7 +94,7 @@ function ChartController ($scope, $http) {
                 $scope._data2 = jsonData.data.map(function(item) {
                     return Object.keys(item)
                         .filter(function(key){
-                            return key !=='country' //eliminate values of percentage & country properties
+                            return key !=='country' //eliminate values of country property
                         })
                         .map(function(key) {
                             return item[key]
