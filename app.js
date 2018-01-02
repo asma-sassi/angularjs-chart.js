@@ -2,10 +2,6 @@
 // create the module named streamapp and include ngRoute for routing needs
 var streamApp = angular.module('streamApp',['ngRoute','chart.js']);
 
-// streamApp.config(['$qProvider', function ($qProvider) {
-//     $qProvider.errorOnUnhandledRejections(false);
-// }]);
-
 //configure app's routes
 streamApp.config(['$routeProvider','$locationProvider',function ($routeProvider,$locationProvider) {
     $routeProvider

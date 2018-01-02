@@ -1,6 +1,81 @@
-<!--contact.html-->
-<div class="jumbotron text-center">
-    <h1>Contact Page</h1>
+<!--&lt;!&ndash;contact.html&ndash;&gt;-->
+<!--<div class="jumbotron text-center">-->
+    <!--<h1>Contact Page</h1>-->
 
-    <p>{{ contact }}</p>
+    <!--<p>{{ contact }}</p>-->
+<!--</div>-->
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-lg-8 col-lg-offset-2">
+
+            <h2 class="contact-title">What do you think</h2>
+
+            <p class="paragraph">For questions or more details about application, contact your developper with the information
+                set in the footer below or refer to our documentation for project development's steps and configurations.</p>
+
+            <div ng-controller="ContactController" class="panel-body">
+
+                <!-- Form -->
+                <form method="POST" action="http://formspree.io/asmasassi123@gmail.com">
+
+                    <div class="messages"></div>
+
+                    <div class="controls">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Name *</label>
+                                    <input type="text" name="Name" class="form-control" placeholder="Please enter your name *" required="required">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Email *</label>
+                                    <input type="email" name="Email" class="form-control" placeholder="Please enter your email *" required="required">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Subject</label>
+                                    <input type="text" name="Subject" class="form-control"   placeholder="Please entre your subject message" required="required">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Message *</label>
+                                    <textarea name="Message" class="form-control" placeholder="Message for me *" rows="4" required="required"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <div class="col-lg-offset-2 col-lg-10">
+                                        <button type="submit" class="btn btn-info btn-send">
+                                            Send Message
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
 </div>
