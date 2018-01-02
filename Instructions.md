@@ -26,5 +26,16 @@ III- Project development:
     2. Build header.html, then call it into index.html
     3. The same thing with footer.html
     4. Configure routes and views in app.js
+    5. Test
+    6. Adding Contact and About Pages
+      6.a) Add contact.css under styles folder
+      6.b) Call it in index.html
+     // 6.c) Build contact form (contact.html)
+     // 6.d) Add contact.php in index.html for form action
+IV-  Chart:
+    1. To add graph in the app, we install angular-chart package >npm install angular-chart.js --save
+    2. Include the dependencies in index.html
+    3. Declare a dependency 'chart.js' in app.js
+  
  
 

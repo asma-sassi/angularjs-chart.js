@@ -10,13 +10,14 @@
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
         <!-- App CSS Styles -->
         <link rel="stylesheet" href="styles/style.css"/>
+        <link rel="stylesheet" href="node_modules/angular-chart.js/dist/angular-chart.css"/>
     </head>
     <body>
         <!-- including header -->
         <div ng-include="'views/templates/header.html'"></div>
 
         <!-- this is where content will be injected -->
-        <div class="container">
+        <div class="container" style="height: 653px;">
             <div class="row">
                 <div ng-view></div>
             </div>
@@ -30,6 +31,8 @@
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
         <script type="text/javascript" src="node_modules/angular-route/angular-route.min.js"></script>
+        <script src="node_modules/chart.js/dist/Chart.min.js"></script>
+        <script src="node_modules/angular-chart.js/dist/angular-chart.min.js"></script>
         <!-- App Javascript-->
         <script type="text/javascript" src="app.js"></script>
         <script type="text/javascript" src="controllers/MainController.js"></script>
