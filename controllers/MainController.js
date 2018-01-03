@@ -59,7 +59,7 @@ function ChartController ($scope, $http) {
                 legend: { display: true },
                 title: {
                     display: true,
-                    text: 'Most used platform distribution in %'
+                    text: 'Distribution of most used platforms per %'
                 }
             };
         });
@@ -112,7 +112,7 @@ function ChartController ($scope, $http) {
                 legend: { display: true },
                 title: {
                     display: true,
-                    text: 'Streams distribution in % per most powerful countries'
+                    text: 'Distribution of streaming types by powerful countries per %'
                 },
                 ticks: {
                     stepSize: 1,
@@ -155,7 +155,7 @@ function ChartController ($scope, $http) {
                 legend: { display: true },
                 title: {
                     display: true,
-                    text: 'Streams distribution in % per most powerful countries'
+                    text: 'Distribution of video broadcasting by powerful countries per %'
                 }
             }
         });
